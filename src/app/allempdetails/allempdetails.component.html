@@ -1,0 +1,53 @@
+<html>
+  <div class="row" style="padding-top: 1%">
+    <div class="col-10">
+      <h3 style="font-size:large;"><b>EMPLOYEE DETAILS</b></h3>
+    </div>
+    <div class="col-2">
+     <button type="submit"  style="background-color: #88B4BA;" 
+      routerLink="/dashboard/addemp">Add Employee</button>
+     
+    </div>
+   </div>
+
+  <br />
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Employee ID</th>
+        <th>Employee Name</th>
+        <th>Grade</th>
+        <th>DOB</th>
+        <th>Mobile Number</th>
+        <th>Date Of Joining</th>
+        <th>Exprience</th>
+        <th>Yash Exprience</th>
+        <th>Base Location</th>
+        <th>Current Location</th>
+       
+      </tr>
+    </thead>
+
+    <tbody>
+     
+      <tr *ngFor="let t of employee">
+        <td>{{t.employeeId}}</td>
+        <td>{{t.employeeName}}</td>
+        <td>{{t.grade}}</td>
+        <td>{{t.dob}}</td>
+        <td>{{t.mobileNo}}</td>
+       
+        <td>{{t.dateOfJoining}}</td>
+        <td>{{t.exprience}}</td>
+        <td>{{t.exprienceInRange}}</td>
+        <td>{{t.baseLocation}}</td>
+        <td>{{t.currentLocation}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+  
+</html>
+<!-- <router-outlet></router-outlet> -->
+
