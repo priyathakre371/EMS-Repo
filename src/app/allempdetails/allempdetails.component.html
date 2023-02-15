@@ -19,13 +19,18 @@
         <th>Employee Name</th>
         <th>Grade</th>
         <th>DOB</th>
+        <th>Email Address</th>
         <th>Mobile Number</th>
         <th>Date Of Joining</th>
         <th>Exprience</th>
         <th>Yash Exprience</th>
+        <th>Total Exprience</th>
         <th>Base Location</th>
         <th>Current Location</th>
-       
+        <th>Primary Skills</th>
+        <th>Secondary Skills</th>
+        <th></th>
+        <th></th>
       </tr>
     </thead>
 
@@ -36,15 +41,21 @@
         <td>{{t.employeeName}}</td>
         <td>{{t.grade}}</td>
         <td>{{t.dob}}</td>
+        <td>{{t.email}}</td>
         <td>{{t.mobileNo}}</td>
-       
         <td>{{t.dateOfJoining}}</td>
         <td>{{t.exprience}}</td>
-        <td>{{t.exprienceInRange}}</td>
+        <td>{{t.yashExperiene}}</td>
+        <td>{{t.totalExperience}}</td>
         <td>{{t.baseLocation}}</td>
         <td>{{t.currentLocation}}</td>
-
-    </tr>
+        <td>{{t.primarySkills}}</td>
+        <td>{{t.secondarySkills}}</td>
+        <!--<button type="submit" (click)="update(t.employeeId)" class="btn btn-dark">Update</button><br>-->
+   
+   <td>
+   <button type="submit" (click)="delete(t.employeeId)" class="btn btn-danger">Delete</button></td>
+      </tr>
     </tbody>
   </table>
   

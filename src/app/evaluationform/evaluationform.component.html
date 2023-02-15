@@ -1,0 +1,203 @@
+
+<section>
+    <div class="container" >
+      <div class="row d-flex justify-content-center align-items-center h-10">
+        <div class="col">
+          <div class="card card-registration my-2" >
+            <div class="row g-0">
+              <div class="col-xl-12" style="background-color: #88B4BA;">
+                <div class="card-body p-md-3 text-black">
+                  <h2 class="mb-4 text-uppercase" >Evaluation Form</h2>
+                  <form #prof="ngForm" (ngSubmit)="editEval()">
+                    <div class="row mb-4">
+                      <div style="padding-left:1%">
+                        <div class="col-md-2">
+                            <div class="form-outline">
+                              <label class="form-label"  for="form3Example1m">Date</label>
+                              <input type="date"  id="date" name="evaluationDate"  class="form-control form-control-sm" 
+                               [(ngModel)]="evaluation.evaluationDate"/>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1m">Employee Id</label>
+                        
+                        <input type="number" id="employeeId" name="employeeId"  class="form-control form-control-sm" 
+                        [(ngModel)]="employee.employeeId"/>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1m">Employee Name</label>
+                        <input type="text" id="employeeName"  name="employeeName"  class="form-control form-control-sm" 
+                        [(ngModel)]="employee.employeeName"/>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1m">Email Id</label>
+                          <input type="text" id="email" name="email"  class="form-control form-control-sm" 
+                          [(ngModel)]="employee.email" />
+                        </div>
+                      </div>
+                  </div>
+                 
+                  
+<div style="padding-top: 3%">
+  <table class="table table-striped "  >
+    <thead>
+      <tr>
+        <th>Skills</th>
+        <th>Rating</th>
+        <th>Proficiency</th>
+        <th>Action</th>
+       
+      </tr>
+    </thead>
+    <tbody>
+     <tr>
+     
+        <td> <input type="text" id="skillName" name="skillName"  class="form-control form-control-sm" 
+            placeholder="Select Skills" [(ngModel)]="skill.skillName" /></td>
+        <td><input type="number" id="skillRating" name="skillRating"  class="form-control form-control-sm" 
+            placeholder="Select Rating"  [(ngModel)]="skill.skillRating" /></td>
+        <td><input type="text" id="skillProficiency" name="skillProficiency"  class="form-control form-control-sm" 
+            placeholder="Select Proficiency" [(ngModel)]="skill.skillProficiency"/></td>
+        <td> <button id="b1" type="submit" style="color:green" class="btn btn-success">Add</button></td>
+        <td></td>
+    
+    </tr>
+    <tr>
+<td><input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+    value="Java" /></td>
+<td><input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+  value="1" /></td>
+<td><input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+    value="Good"  /></td>
+
+<td> <button id="b2" type="submit" style="color:orange" class="btn btn-warning">Edit</button></td>
+         <td> <button id="b3" type="reset"  style="color:red" class="btn btn-danger">Delete</button></td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+                  
+               
+                 <div class="row mt-4">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example1n">Overall Rating</label>
+                      <input id="textboxid" type="number" id="overallRating" name="overallRating"  class="form-control form-control-sm" 
+                      placeholder="Enter Overall Rating" [(ngModel)]="evaluation.overallRating"/>
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example1n1">Overall Comment</label>
+                      <input type="text" id="overallComment"  name="overallComment" class="form-control form-control-sm" 
+                      placeholder="Enter Overall Comment" [(ngModel)]="evaluation.overallComment" />
+                      </div>
+                  </div>
+
+                  
+                 </div>
+                  
+                  
+                  
+                <div style="padding-left: 20%">
+                  <div class="row mt-5">
+                    <div class="col-4">
+                        <button class="btn btn-outline-light"   type="submit" >Upload Excel Sheet</button>
+                      </div>
+                    <div class="col-2">
+                    <button class="btn btn-outline-light"  type="submit">Save</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn btn-outline-light"   type="reset" >Cancel</button>
+                  </div>
+                </div>
+            </div>
+            
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--
+<div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Skills</th>
+        <th>Rating</th>
+        <th>Proficiency</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr >
+        <td> <input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+            placeholder="skill"  /></td>
+        <td><input type="number" id="grade" name="grade"  class="form-control form-control-sm" 
+            placeholder="rating"  /></td>
+        <td><input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+            placeholder="name"  /></td>
+        <td> <button id="b1" type="submit"  style="color:green" class="btn btn-success">Add</button></td>
+        <td> <button id="b2" type="submit" style="color:orange" class="btn btn-primary">Edit</button></td>
+        <td> <button id="b3" type="submit"  style="color:red" class="btn btn-danger">Delete</button></td>
+        </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+
+  <div class="row mt-3 ">
+                    <div class="col-md-3">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Skills</label>
+                        <input  type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+                        placeholder="Select Skills"  />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n1">Rating</label>
+                        <input  id="dob" name="dob" placeholder="Select Rating" type="number"  class="form-control form-control-sm" />
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1n">Proficiency</label>
+                          <input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+                          placeholder="Select Proficiency"  />
+                          </div>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1n">Edit</label>
+                          <input type="button" id="grade" name="grade"  class="form-control form-control-sm" 
+                          placeholder="name"  />
+                          </div>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="form-outline">
+                          <label class="form-label" for="form3Example1n">Delete</label>
+                          <input type="button" id="grade" name="grade"  class="form-control form-control-sm" 
+                          placeholder="Select Proficiency"  />
+                          </div>
+                      </div>
+                      </div>
+              
+-->
+
+
+
+

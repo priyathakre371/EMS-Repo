@@ -11,15 +11,21 @@ import { Router } from '@angular/router';
 export class AddempComponent implements OnInit {
    public employee:any=
    {
+  employeeId:'',  
 	employeeName:'',
   grade:'',
 	dob:'',
+  email:'',
+  mobileNo:'',
 	dateOfJoining:'',
 	exprience:'',
-	exprienceInRange:'',
 	baseLocation:'',
 	currentLocation:'',
-	mobileNo:''
+  primarySkills:'',
+  secondarySkills:'',
+  yashExperiene:'',
+  totalExperience:''
+
    }
   constructor(private _router:Router,private empservice:EmployeeService) { }
 

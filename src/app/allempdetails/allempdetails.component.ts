@@ -10,16 +10,20 @@ import { EmployeeService } from '../service/employee.service';
 export class AllempdetailsComponent implements OnInit {
 
   public employee:any={
-    employeeId:'',
-    employeeName:'',
-    grade:'',
-     dob:'',
-    exprience:'',
-    exprienceInRange:'',
-    baseLocation:'',
-    currentLocation:'',
-    dateOfJoining:'',
-    mobileNo:''
+    employeeId:'',  
+	employeeName:'',
+  grade:'',
+	dob:'',
+  email:'',
+  mobileNo:'',
+	dateOfJoining:'',
+	exprience:'',
+	baseLocation:'',
+	currentLocation:'',
+  primarySkills:'',
+  secondarySkills:'',
+  yashExperiene:'',
+  totalExperience:''
   }
   constructor( private empservice:EmployeeService,private router:Router) { }
 
@@ -38,5 +42,21 @@ export class AllempdetailsComponent implements OnInit {
     this.router.navigate(["/dashboard/addemp"]);
 
   }
+  update(id:any){
+    this.router.navigate(["/dashboard/addemp/"]);
+    
+  }
+
+  delete(id:any){
+    this.empservice.deleteEmpById(id).subscribe(
+      (data:any)=>{
+        window.location.reload();
+      },
+      (Error:any)=>{
+  
+      }
+    )
+    }
+
 
 }

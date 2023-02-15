@@ -103,48 +103,67 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-outline">
-                        <label class="form-label" for="form3Example1m">Employee Full Name</label>
-                        <input type="text" id="employeeName"  name="employeeName"  class="form-control form-control-sm" [(ngModel)]="employee.employeeName"  />
+                        <label class="form-label" for="form3Example1m">Employee Id</label>
+                        <input type="text" id="employeeName"  name="employeeName"  class="form-control form-control-sm" 
+                        placeholder="Enter Employee Id" [(ngModel)]="employee.employeeId"  />
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-outline">
-                        <label class="form-label" for="form3Example1n1">DOB</label>
-                        <input  id="dob" name="dob"placeholder="MM/DD/YYY" type="date"  class="form-control form-control-sm" [(ngModel)]="employee.dob" />
-                        
+                        <label class="form-label" for="form3Example1m">Employee Name</label>
+                        <input type="text" id="employeeName"  name="employeeName"  class="form-control form-control-sm" 
+                        placeholder="Enter Employee Name" [(ngModel)]="employee.employeeName"  />
                       </div>
                     </div>
-                    
+                  
                   </div>
 
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-outline">
                         <label class="form-label" for="form3Example1n">Grade</label>
-                        <input type="text" id="grade" name="grade"  class="form-control form-control-sm" [(ngModel)]="employee.grade" />
-                        
-                      </div>
+                        <input type="text" id="grade" name="grade"  class="form-control form-control-sm" 
+                        placeholder="Enter Grade" [(ngModel)]="employee.grade" />
+                        </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-outline">
-                        <label class="form-label" for="form3Example1n1">Mobile Number</label>
-                        <input type="text" id="mobileNo"  name="mobileNo" class="form-control form-control-sm" [(ngModel)]="employee.mobileNo" />
-                        
-                      </div>
+                        <label class="form-label" for="form3Example1n1">DOB</label>
+                        <input  id="dob" name="dob" placeholder="MM/DD/YYY" type="date"  class="form-control form-control-sm" 
+                        [(ngModel)]="employee.dob" />
+                        </div>
                     </div>
+                 </div>
+                 <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example1n">Email Address</label>
+                      <input type="email" id="grade" name="grade"  class="form-control form-control-sm" 
+                      placeholder="Enter Email Address" [(ngModel)]="employee.email" />
+                      </div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="form-outline">
+                      <label class="form-label" for="form3Example1n1">Mobile Number</label>
+                      <input type="text" id="mobileNo"  name="mobileNo" class="form-control form-control-sm" 
+                      placeholder="Enter Mobile Number" [(ngModel)]="employee.mobileNo" />
+                      </div>
+                  </div>
+                 </div>
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-outline">
-                        <label class="form-label" for="form3Example1n">Experience</label>
-                        <input type="text" id="exprience" name="exprience"  class="form-control form-control-sm" [(ngModel)]="employee.exprience" />
-                        
-                      </div>
+                        <label class="form-label" for="form3Example1n1">Date of joining</label>
+                        <input  id="dateOfJoining"  name="dateOfJoining" class="form-control form-control-sm"
+                         placeholder="MM/DD/YYY" type="date" 
+                         [(ngModel)]="employee.dateOfJoining"/>
+                        </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-outline">
-                        <label class="form-label" for="form3Example1n1">Date of joining</label>
-                        <input  id="dateOfJoining"  name="dateOfJoining" class="form-control form-control-sm" placeholder="MM/DD/YYY" type="date" [(ngModel)]="employee.dateOfJoining"/>
+                        <label class="form-label" for="form3Example1n">Experience</label>
+                        <input type="text" id="exprience" name="exprience"  class="form-control form-control-sm" 
+                        placeholder="Experience(00.00)" [(ngModel)]="employee.exprience" />
                         
                       </div>
                     </div>
@@ -153,14 +172,34 @@
                     <div class="col-md-6">
                       <div class="form-outline">
                         <label class="form-label" for="form3Example1n">Base Location</label>
-                        <input type="text" id="baseLocation" name="baseLocation"  class="form-control form-control-sm" [(ngModel)]="employee.baseLocation" />
+                        <input type="text" id="baseLocation" name="baseLocation"  class="form-control form-control-sm"
+                        placeholder="Enter Base Loaction" [(ngModel)]="employee.baseLocation" />
                         
                       </div>
                     </div>
                     <div class="col-md-6">
                       <div class="form-outline">
                         <label class="form-label" for="form3Example1n1">Current Location</label>
-                        <input type="text" id="currentLocation"  name="currentLocation" class="form-control form-control-sm" [(ngModel)]="employee.currentLocation" />
+                        <input type="text" id="currentLocation"  name="currentLocation" class="form-control form-control-sm" 
+                        placeholder="Enter Current Location" [(ngModel)]="employee.currentLocation" />
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n">Primary Skills</label>
+                        <input type="text" id="baseLocation" name="baseLocation"  class="form-control form-control-sm" 
+                        placeholder="Enter Primary Skills" [(ngModel)]="employee.primarySkills" />
+                        
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-outline">
+                        <label class="form-label" for="form3Example1n1">Secondary Skills</label>
+                        <input type="text" id="currentLocation"  name="currentLocation" class="form-control form-control-sm" 
+                        [(ngModel)]="employee.secondarySkills" placeholder="Enter Secondary Skills" />
                         
                       </div>
                     </div>
@@ -177,14 +216,7 @@
                     
                   </div>-->
 
-                  <!--<div class="row mt-5">
-                    <div class="col-6 space">
-                    <button class="btn btn-outline-light"  routerLink="/skills" type="submit">Add Skills</button>
-                </div>
-                <div class="col-6">
-                    <button class="btn btn-outline-light"   routerLink="/project" type="reset" >Add Project</button>
-                  </div>
-                </div>-->
+                
                   <div class="row mt-5">
                     <div class="col-6 space">
                     <button class="btn btn-outline-light"  type="submit">Save</button>

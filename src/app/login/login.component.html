@@ -102,20 +102,22 @@
 
 <!-- <div class="container">
   <h2>Login</h2> -->
-  <form #loginform="ngForm" (ngSubmit)="loginEms()">
+  <form  #loginform="ngForm"(ngSubmit)="loginEms()">
     <small class="text-danger">{{msg}}</small>
     <p>UserName</p>
        <input  type="username" class="form-control" placeholder="Enter username" name="username"
        [(ngModel)]="employee.username" 
        required #username="ngModel">
+       
        <p>Password</p>
        <input type="password" class="form-control" placeholder="Enter Password" name="password" 
        [(ngModel)]="employee.password" required #password="ngModel">
-       <input  [disabled]= "loginform.form.invalid"   type="submit" name="" value="Login">
+
        
-    <!-- <div class="checkbox">
-      <label><input type="checkbox" name="remember"> Remember me</label>
-    </div> -->
+     <input   type="submit" name="" value="Login">
+    
+     
+    
     <a href="signup" >Sign up</a>
 
   </form>

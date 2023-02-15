@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,10 +23,13 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { AllempdetailsComponent } from './allempdetails/allempdetails.component';
 import { FeedbackComponent } from './feedback/feedback.component';
-import { EvolutionComponent } from './evolution/evolution.component';
+
 import { AddempComponent } from './addemp/addemp.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectComponent } from './project/project.component';
+import { EvaluationformComponent } from './evaluationform/evaluationform.component';
+import { EvaluationComponent } from './evaluation/evaluation.component';
+import { EvaluationlistComponent } from './evaluationlist/evaluationlist.component';
 
 
 @NgModule({
@@ -42,10 +46,16 @@ import { ProjectComponent } from './project/project.component';
     AboutusComponent,
     AllempdetailsComponent,
     FeedbackComponent,
-    EvolutionComponent,
+  
     AddempComponent,
     SkillsComponent,
-    ProjectComponent
+    ProjectComponent,
+    EvaluationformComponent,
+    EvaluationComponent,
+    EvaluationlistComponent,
+   
+   
+    
   ],
   imports: [
     BrowserModule,
@@ -58,7 +68,9 @@ import { ProjectComponent } from './project/project.component';
      BrowserAnimationsModule,
      MatIconModule,
      MatCardModule,
-     MatListModule
+     MatListModule,
+  ReactiveFormsModule
+     
   ],
   providers: [],
   bootstrap: [AppComponent]
